@@ -5,8 +5,8 @@
     <title>Filip Poon</title>
     <style>
         body {
-            background-color: #50717b;
             color: #212121;
+            background: linear-gradient(to bottom, #404041, #F6EDE3);
         }
 
         .background-section {
@@ -14,6 +14,9 @@
             background-size: cover;
             background-position: center;
             color: #50717b;
+            height: 200px;
+            padding: 20px;
+            text-align: left;
         }
 
         hr {
@@ -22,32 +25,71 @@
             background-color: #3a4042;
             margin: 10px 0;
         }
+
         .table {
-            background-color: #3a4042;
-            
+            background: linear-gradient(to right, #D3CAE2, #E6C17A);
         }
-        .align-left{
+
+        .align-left {
             text-align: left;
         }
+
         .width-img-50 {
             width: 50px;
         }
+
+        h1 {
+            font-size: 90px;
+        }
+
+        .shimmer {
+            background: linear-gradient(to right, #D3CAE2, #E6C17A);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            font-family: baskerville, serif;
+        }
+
+        a:link {
+            color: inherit;
+            text-decoration: none; 
+        }
+
+        a:visited {
+            color: inherit;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        .meny-bar {
+            list-style: none; /* Tar bort punktlistan */
+            padding: 0; /* Tar bort standardpadding */
+            margin: 0; /* Tar bort standardmarginal */
+            background-color: #3a4042; /* Bakgrundsfärg för baren */
+            display: flex; /* Gör listan horisontell */
+            justify-content: space-around; /* Fördelar utrymmet jämnt */
+            padding: 10px 20px; /* Padding runt varje lista */
+        }
+
    
-    </style>
+
+</style>
 </head>
 <body>
     <div class="background-section">
-        <h1>  Filip Poon</h1>
-        <h3>  Välkommen till min sida</h3>
-        <ul>
-            <li><a href="#biografi">Biografi</a></li>
-            <li><a href="#karriar">Karriär</a></li>
-            <li><a href="#medv">Medverkan</a></li>
-            <li><a href="#books">Släppta böcker</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
+        <br><br>
+        <h1 class="shimmer">Filip Poon</h1>
     </div>
     <hr>
+    <ul class="shimmer meny-bar">
+        <li><a href="#biografi">Biografi</a></li>
+        <li><a href="#karriar">Karriär</a></li>
+        <li><a href="#medv">Medverkan</a></li>
+        <li><a href="#books">Släppta böcker</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </ul>
     <div id="biografi">
         <h2><b>Biografi</b></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
